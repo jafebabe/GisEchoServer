@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+
+    <script src="js/instruction-editor/main.js"></script>
+    <script src="js/instruction-editor/trip_search.js"></script>
+
+    <script src="/js/home/modernizr.custom.js"></script>
+
+
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/instruction-editor/home.css" />
+    <link rel="stylesheet" href="css/home/style.css"/>
+
+  </head>
+
+  <body>
+    <div class="menu-area">
+      <div id="dl-menu" class="dl-menuwrapper">
+        <button class="dl-trigger">Open Menu</button>
+        <ul class="dl-menu">
+          <li>
+            <a href="#intro">Home</a>
+          </li>
+          <li><a href="javascript:hideSearchPanel();">Search Trip</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#">Sub Menu</a>
+            <ul class="dl-submenu">
+              <li><a href="#">Sub menu</a></li>
+              <li><a href="#">Sub menu</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /dl-menuwrapper -->
+    </div>
+    <div id="wrapper">
+        <div id="search-panel">
+            <div id="search-nav" class="container">
+                <div class="row">
+                    <div id="div-source" class="col-lg-12 col-xs-12 col-md-12"  hidden="true">
+                        <div class="input-group search-box-group">
+                            <input type="text" class="form-control"  placeholder="Search" id="source">
+                            <span class="input-group-addon">
+                                <button type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xs-12 col-md-12">
+                        <div class="input-group search-box-group">
+                            <input type="text" class="form-control"  placeholder="Search" id="destination">
+                            <span class="input-group-addon">
+                                <button type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="map"></div>
+    </div>
+
+
+  </body>
+
+  <script src="/js/home/jquery.js"></script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="/js/home/jquery.smooth-scroll.min.js"></script>
+  <script src="/js/home/jquery.dlmenu.js"></script>
+  <script src="/js/home/wow.min.js"></script>
+  <script src="/js/home/custom.js"></script>
+  <script src="/js/instruction-editor/trip_search.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfamCI42e0LUgmeh7fbSLQWn2ncfuDvRk&libraries=places&callback=initMap"
+          async defer></script>
+</html>

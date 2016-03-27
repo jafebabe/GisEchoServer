@@ -1,0 +1,23 @@
+{
+  "name": "gis-echo-server",
+  "version": "1.0.0",
+  "description": "gis echo server",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "jianjbu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jafebabe/GisEchoServer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jafebabe/GisEchoServer/issues"
+  },
+  "homepage": "https://github.com/jafebabe/GisEchoServer#readme"
+}
